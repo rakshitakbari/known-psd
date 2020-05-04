@@ -1,0 +1,51 @@
+#home{
+    background-image: url(../images/slider-image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    height: 650px;
+    .caption{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        background-color: rgba(20,20,20,0.2);
+        height: 100%;
+        color: $white;
+        cursor: e-resize;
+        h1{
+            color: $white;
+            line-height: normal;
+            font-weight: bold;
+            font-size: 48px;
+            font-family: $font-family;
+            @include media-breakpoint-down(sm){
+                font-size: 30px;
+            }
+        }
+        h3{
+            color: #f9f9f9;
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0;
+            padding: 5px 0 40px 0;
+            font-family: $font-family;
+        }
+        .section-btn {
+            background: transparent;
+            border-radius: 50px;
+            border: 1px solid $white;
+            color: $white;
+            font-size: inherit;
+            font-weight: normal;
+            padding: 15px 30px;
+            transition: 0.5s;
+            &:hover{
+                background: $white;
+                color: #333;
+                border-color: transparent;
+            }
+        }
+    }
+}

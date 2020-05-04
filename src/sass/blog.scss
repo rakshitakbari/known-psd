@@ -1,0 +1,105 @@
+#blog {
+  @media screen and (max-width: 991px) {
+    .media {
+      flex-direction: column;
+    }
+    .media-left {
+      width: auto !important;
+      padding-right: 0 !important;
+    }
+  }
+  .blog-thumb {
+    background: $white;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-align: left;
+    margin-bottom: 30px;
+    @media screen and (max-width: 991px) {
+      .media.blog-thumb .media-left {
+        display: block !important;
+        width: 100%;
+        padding-right: 0;
+        overflow: hidden;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      .media.blog-thumb .media-left {
+        height: 250px;
+      }
+    }
+    .media-left {
+      width: 45%;
+    }
+    .media-body,
+    .media-left,
+    .media-right {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .media-left,
+    .media > .pull-left {
+      padding-right: 10px;
+    }
+    .media-object {
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      a {
+        color: #252525;
+        font-weight: normal;
+      }
+    }
+    .blog-info {
+      padding: 60px 25px;
+      @media screen and (max-width: 991px) {
+        padding: 25px 25px;
+      }
+      small {
+        color: $theme-color;
+        font-weight: 500;
+        display: block;
+        font-size: 20px;
+      }
+      h3 {
+        margin: 0;
+        padding: 8px 0 6px 0;
+        text-transform: capitalize;
+        color: #505050;
+        font-size: 16px;
+        font-weight: 500;
+        a {
+          color: $black;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      p {
+        color: #757575;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 25px;
+        margin: 0 0 10px;
+      }
+      .section-btn {
+        background: #f0f0f0;
+        color: #393939;
+        margin-top: 20px;
+        background: $theme-color;
+        border: 0;
+        border-radius: 100px;
+        color: $white;
+        cursor: pointer;
+        font-size: inherit;
+        font-weight: normal;
+        padding: 15px 30px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+    }
+  }
+}

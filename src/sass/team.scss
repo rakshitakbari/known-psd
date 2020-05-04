@@ -1,0 +1,56 @@
+#team{
+    background: #f9f9f9;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
+    .team-thumb {
+        background: $white;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+        @include media-breakpoint-down(md){
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+        }
+        .team-info {
+            padding: 20px 30px;
+        }
+        h3 {
+            margin: 0;
+            color: #454545;
+            font-size: 20px;
+        }
+        .social-icon {
+            border-top: 1px solid #f0f0f0;
+            padding: 4px 20px 0 20px;
+            position: relative;
+            margin: 0;
+            li {
+                display: inline-block;
+                list-style: none;
+                margin-bottom: 5px;
+                a {
+                    background: $white;
+                    color: #252020;
+                    border-radius: 100px;
+                    // color: $theme-color;
+                    font-size: 15px;
+                    width: 35px;
+                    height: 45px;
+                    line-height: 35px;
+                    text-decoration: none;
+                    text-align: center;
+                    transition: all 0.4s ease-in-out;
+                    position: relative;
+                    margin: 5px 5px 5px 0;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

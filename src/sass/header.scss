@@ -1,0 +1,40 @@
+header {
+    .navbar-menu{
+            background: $white;
+            border-top: 5px solid $theme-color;
+            border-bottom: 0;
+            -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+            height: 68px;
+            margin-bottom: 0;
+            .navbar-brand{
+                color: #454545;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 40px;
+                cursor: pointer;
+            }
+            .navbar-collapse{
+                @include media-breakpoint-down(sm){
+                    background-color: rgb(248, 249, 250);
+                    z-index: 100;
+                }    
+                ul{
+                    li{
+                        > a{
+                            padding: 20px;
+                            transition: 1s;
+                            margin-left: 20px;
+                            &:hover{
+                                background-color: $theme-color;
+                                color: $white !important;
+                                transition: 1s;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
